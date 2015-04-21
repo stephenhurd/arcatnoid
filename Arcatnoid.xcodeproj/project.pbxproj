@@ -16,6 +16,9 @@
 		6D6E5B601AE6E44600F3DD99 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D6E5B5F1AE6E44600F3DD99 /* Images.xcassets */; };
 		6D6E5B631AE6E44600F3DD99 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D6E5B611AE6E44600F3DD99 /* LaunchScreen.xib */; };
 		6D6E5B6F1AE6E44600F3DD99 /* ArcatnoidTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D6E5B6E1AE6E44600F3DD99 /* ArcatnoidTests.m */; };
+		6D6E5B7A1AE6ED8A00F3DD99 /* assets.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 6D6E5B781AE6ED8A00F3DD99 /* assets.atlas */; };
+		6D6E5B7B1AE6ED8A00F3DD99 /* backgrounds in Resources */ = {isa = PBXBuildFile; fileRef = 6D6E5B791AE6ED8A00F3DD99 /* backgrounds */; };
+		6D6E5B841AE6FE9B00F3DD99 /* GameOverScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D6E5B831AE6FE9B00F3DD99 /* GameOverScene.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +48,10 @@
 		6D6E5B681AE6E44600F3DD99 /* ArcatnoidTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArcatnoidTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D6E5B6D1AE6E44600F3DD99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6D6E5B6E1AE6E44600F3DD99 /* ArcatnoidTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArcatnoidTests.m; sourceTree = "<group>"; };
+		6D6E5B781AE6ED8A00F3DD99 /* assets.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = assets.atlas; sourceTree = "<group>"; };
+		6D6E5B791AE6ED8A00F3DD99 /* backgrounds */ = {isa = PBXFileReference; lastKnownFileType = folder; path = backgrounds; sourceTree = "<group>"; };
+		6D6E5B821AE6FE9B00F3DD99 /* GameOverScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameOverScene.h; sourceTree = "<group>"; };
+		6D6E5B831AE6FE9B00F3DD99 /* GameOverScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameOverScene.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,11 +98,15 @@
 				6D6E5B541AE6E44600F3DD99 /* GameScene.h */,
 				6D6E5B551AE6E44600F3DD99 /* GameScene.m */,
 				6D6E5B571AE6E44600F3DD99 /* GameScene.sks */,
+				6D6E5B821AE6FE9B00F3DD99 /* GameOverScene.h */,
+				6D6E5B831AE6FE9B00F3DD99 /* GameOverScene.m */,
 				6D6E5B591AE6E44600F3DD99 /* GameViewController.h */,
 				6D6E5B5A1AE6E44600F3DD99 /* GameViewController.m */,
 				6D6E5B5C1AE6E44600F3DD99 /* Main.storyboard */,
 				6D6E5B5F1AE6E44600F3DD99 /* Images.xcassets */,
 				6D6E5B611AE6E44600F3DD99 /* LaunchScreen.xib */,
+				6D6E5B781AE6ED8A00F3DD99 /* assets.atlas */,
+				6D6E5B791AE6ED8A00F3DD99 /* backgrounds */,
 				6D6E5B4D1AE6E44600F3DD99 /* Supporting Files */,
 			);
 			path = Arcatnoid;
@@ -210,6 +221,8 @@
 				6D6E5B631AE6E44600F3DD99 /* LaunchScreen.xib in Resources */,
 				6D6E5B601AE6E44600F3DD99 /* Images.xcassets in Resources */,
 				6D6E5B581AE6E44600F3DD99 /* GameScene.sks in Resources */,
+				6D6E5B7A1AE6ED8A00F3DD99 /* assets.atlas in Resources */,
+				6D6E5B7B1AE6ED8A00F3DD99 /* backgrounds in Resources */,
 				6D6E5B5E1AE6E44600F3DD99 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -228,6 +241,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D6E5B841AE6FE9B00F3DD99 /* GameOverScene.m in Sources */,
 				6D6E5B5B1AE6E44600F3DD99 /* GameViewController.m in Sources */,
 				6D6E5B531AE6E44600F3DD99 /* AppDelegate.m in Sources */,
 				6D6E5B561AE6E44600F3DD99 /* GameScene.m in Sources */,
@@ -360,6 +374,7 @@
 				INFOPLIST_FILE = Arcatnoid/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -370,6 +385,7 @@
 				INFOPLIST_FILE = Arcatnoid/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
