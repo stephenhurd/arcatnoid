@@ -16,9 +16,10 @@
 		6D6E5B601AE6E44600F3DD99 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D6E5B5F1AE6E44600F3DD99 /* Images.xcassets */; };
 		6D6E5B631AE6E44600F3DD99 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D6E5B611AE6E44600F3DD99 /* LaunchScreen.xib */; };
 		6D6E5B6F1AE6E44600F3DD99 /* ArcatnoidTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D6E5B6E1AE6E44600F3DD99 /* ArcatnoidTests.m */; };
-		6D6E5B7A1AE6ED8A00F3DD99 /* assets.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 6D6E5B781AE6ED8A00F3DD99 /* assets.atlas */; };
-		6D6E5B7B1AE6ED8A00F3DD99 /* backgrounds in Resources */ = {isa = PBXBuildFile; fileRef = 6D6E5B791AE6ED8A00F3DD99 /* backgrounds */; };
 		6D6E5B841AE6FE9B00F3DD99 /* GameOverScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D6E5B831AE6FE9B00F3DD99 /* GameOverScene.m */; };
+		6DEF580D1AF931C50003808D /* laser.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6DEF580C1AF931C50003808D /* laser.mp3 */; };
+		6DF5495B1AF8F3460050E813 /* block_hit.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6DF549591AF8F3460050E813 /* block_hit.mp3 */; };
+		6DF5495C1AF8F3460050E813 /* paddle_hit.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6DF5495A1AF8F3460050E813 /* paddle_hit.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,10 +49,11 @@
 		6D6E5B681AE6E44600F3DD99 /* ArcatnoidTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArcatnoidTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D6E5B6D1AE6E44600F3DD99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6D6E5B6E1AE6E44600F3DD99 /* ArcatnoidTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArcatnoidTests.m; sourceTree = "<group>"; };
-		6D6E5B781AE6ED8A00F3DD99 /* assets.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = assets.atlas; sourceTree = "<group>"; };
-		6D6E5B791AE6ED8A00F3DD99 /* backgrounds */ = {isa = PBXFileReference; lastKnownFileType = folder; path = backgrounds; sourceTree = "<group>"; };
 		6D6E5B821AE6FE9B00F3DD99 /* GameOverScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameOverScene.h; sourceTree = "<group>"; };
 		6D6E5B831AE6FE9B00F3DD99 /* GameOverScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameOverScene.m; sourceTree = "<group>"; };
+		6DEF580C1AF931C50003808D /* laser.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = laser.mp3; path = sfx/laser.mp3; sourceTree = "<group>"; };
+		6DF549591AF8F3460050E813 /* block_hit.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = block_hit.mp3; path = sfx/block_hit.mp3; sourceTree = "<group>"; };
+		6DF5495A1AF8F3460050E813 /* paddle_hit.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = paddle_hit.mp3; path = sfx/paddle_hit.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 		6D6E5B4C1AE6E44600F3DD99 /* Arcatnoid */ = {
 			isa = PBXGroup;
 			children = (
+				6DF549581AF8F3220050E813 /* sfx */,
 				6D6E5B511AE6E44600F3DD99 /* AppDelegate.h */,
 				6D6E5B521AE6E44600F3DD99 /* AppDelegate.m */,
 				6D6E5B541AE6E44600F3DD99 /* GameScene.h */,
@@ -105,8 +108,6 @@
 				6D6E5B5C1AE6E44600F3DD99 /* Main.storyboard */,
 				6D6E5B5F1AE6E44600F3DD99 /* Images.xcassets */,
 				6D6E5B611AE6E44600F3DD99 /* LaunchScreen.xib */,
-				6D6E5B781AE6ED8A00F3DD99 /* assets.atlas */,
-				6D6E5B791AE6ED8A00F3DD99 /* backgrounds */,
 				6D6E5B4D1AE6E44600F3DD99 /* Supporting Files */,
 			);
 			path = Arcatnoid;
@@ -136,6 +137,16 @@
 				6D6E5B6D1AE6E44600F3DD99 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6DF549581AF8F3220050E813 /* sfx */ = {
+			isa = PBXGroup;
+			children = (
+				6DEF580C1AF931C50003808D /* laser.mp3 */,
+				6DF549591AF8F3460050E813 /* block_hit.mp3 */,
+				6DF5495A1AF8F3460050E813 /* paddle_hit.mp3 */,
+			);
+			name = sfx;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,6 +198,7 @@
 				TargetAttributes = {
 					6D6E5B491AE6E44600F3DD99 = {
 						CreatedOnToolsVersion = 6.3;
+						DevelopmentTeam = VFP5G7TMZS;
 					};
 					6D6E5B671AE6E44600F3DD99 = {
 						CreatedOnToolsVersion = 6.3;
@@ -218,11 +230,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6DEF580D1AF931C50003808D /* laser.mp3 in Resources */,
+				6DF5495C1AF8F3460050E813 /* paddle_hit.mp3 in Resources */,
+				6DF5495B1AF8F3460050E813 /* block_hit.mp3 in Resources */,
 				6D6E5B631AE6E44600F3DD99 /* LaunchScreen.xib in Resources */,
 				6D6E5B601AE6E44600F3DD99 /* Images.xcassets in Resources */,
 				6D6E5B581AE6E44600F3DD99 /* GameScene.sks in Resources */,
-				6D6E5B7A1AE6ED8A00F3DD99 /* assets.atlas in Resources */,
-				6D6E5B7B1AE6ED8A00F3DD99 /* backgrounds in Resources */,
 				6D6E5B5E1AE6E44600F3DD99 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -371,9 +384,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Arcatnoid/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -382,9 +398,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Arcatnoid/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
@@ -442,6 +461,7 @@
 				6D6E5B741AE6E44600F3DD99 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6D6E5B751AE6E44600F3DD99 /* Build configuration list for PBXNativeTarget "ArcatnoidTests" */ = {
 			isa = XCConfigurationList;
@@ -450,6 +470,7 @@
 				6D6E5B771AE6E44600F3DD99 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
